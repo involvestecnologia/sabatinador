@@ -30,6 +30,32 @@ body {
   text-align: center;
 }
 
+.ios-popup {
+  position: fixed;
+  width: 80%;
+  right: 0;
+  left: 0;
+  bottom: 16px;
+  margin: auto;
+  visibility: hidden;
+  
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+  color: #371B6E;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+
+  opacity:0;
+  transition: opacity 0.5s linear;
+}
+
+.ios-popup > span:first-of-type {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 small {
   font-style: italic;
   color:#9B8DB7;

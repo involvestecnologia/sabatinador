@@ -72,3 +72,25 @@ function getNewRandomPhase() {
   
   document.getElementById("randomPhase").innerHTML = shuffledArray.shift();
 }
+
+// Detects if device is on iOS 
+function isIos() {
+  var userAgent = window.navigator.userAgent.toLowerCase();
+  return /iphone|ipad|ipod/.test( userAgent );
+}
+
+// Detects if device is in standalone mode
+function isInStandaloneMode() {
+  return ('standalone' in window.navigator) && (window.navigator.standalone);
+}
+  
+function initPwaPopup() {
+  if (isIos() && !isInStandaloneMode()) {
+    setTimeout(function() {
+      document.getElementsByClassName('ios-popup')[0].style.visibility = 'visible';
+      document.getElementsByClassName('ios-popup')[0].style.opacity = '1';
+    }, 2000);
+  }
+}
+
+initPwaPopup();
