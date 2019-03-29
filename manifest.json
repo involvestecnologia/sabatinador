@@ -1,7 +1,7 @@
 {
   "short_name": "Sabatinador",
   "display": "standalone",
-  "theme_color": "#371B6E"
+  "theme_color": "#371B6E",
   "name": "Sabatinador",
   "icons": [
     {
