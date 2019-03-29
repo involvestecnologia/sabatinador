@@ -65,12 +65,10 @@ function shuffle(a) {
 }
 
 function getNewRandomPhase() {
- 
  if (shuffledArray.length == 0){
    shuffledArray = list.slice();
    shuffle(shuffledArray);
  }
   
-document.getElementById("randomPhase").innerHTML = shuffledArray.shift();
-
+  document.getElementById("randomPhase").innerHTML = shuffledArray.shift();
 }
