@@ -12,7 +12,11 @@ body {
   font-family: "Hind", sans-serif;
   color:#EBE8F0;
   line-height: 1;
-
+}
+ 
+.content-container {
+  width: 100%;
+  height: 100%;
   justify-content: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -21,9 +25,9 @@ body {
   display: flex;
 }
 
-body > div {
-  text-align: center;
+.content-container > div {
   padding: 16px;
+  text-align: center;
 }
 
 small {
