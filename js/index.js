@@ -89,6 +89,10 @@ function initPwaPopup() {
     setTimeout(function() {
       document.getElementsByClassName('ios-popup')[0].style.visibility = 'visible';
       document.getElementsByClassName('ios-popup')[0].style.opacity = '1';
+
+      setTimeout(function() {
+        document.getElementsByClassName('ios-popup')[0].style.visibility = 'hidden';
+      }, 10000);
     }, 2000);
   }
 }
